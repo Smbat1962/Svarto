@@ -1,4 +1,3 @@
-
 def remove_student(id, my_dict):
     if id in my_dict:
         my_dict.pop(id)
@@ -76,35 +75,27 @@ def main():
             my_list = [input("name: "), input("age: "),
                        input("course names: ")]
             add_student(id, my_dict, my_list)
-
         elif operator == "remove":
             id = input("id: ")
             remove_student(id, my_dict)
-
         elif operator == "update":
             id = input("id: ")
             my_list = [input("name: "), input("age: "),
                        input("course names: ")]
             update_student(id, my_dict, my_list)
-
         elif operator == "display":
             id = input("id: ")
             display_student(id, my_dict)
-
         elif operator == "finding":
             curs_name = input("cours names ")
             finding_student(curs_name, my_dict)
-
         elif operator == "old_young":
             old_young_student(my_dict)
-
         elif operator == "sort_name":
             sort_name_student(my_dict)
-
         elif operator == "convert_record":
             id = input("id: ")
             convert_record_student(id, my_dict)
-            
         else:
             break
 
