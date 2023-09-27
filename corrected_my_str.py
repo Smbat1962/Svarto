@@ -9,16 +9,20 @@ class My_Str:
             if s1[i] == volue[0]:
                 if s1[i:i + len(volue)] == volue:
                     counter += 1
+
         return counter
 
     def endswith(self, volue, start=0, end=None):
+
         s1 = self.s[start:end]
         if volue in s1:
             if s1[-1] == volue[-1]:
                 return True
+
         return False
 
     def format(self, *volue):
+
         s1 = ""
         count = 0
         for i in self.s:
@@ -76,7 +80,7 @@ def main():
 
     my_str = My_Str(
         "Hello, Hello I am {} And my age is {} Welcome tocom My id is {} comWor\tld W\torld")
-    #my_str = My_Str("D584lkj69")
+    # my_str = My_Str("D584lkj69")
     print(my_str.count("llo", 1, 15))
     print(my_str.endswith("llo", 1, 5))
     print(my_str.format("klon", "45", "f5"))
