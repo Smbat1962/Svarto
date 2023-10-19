@@ -13,7 +13,7 @@ def selection_sort_increase(lst):
 def selection_sort_decrease(lst):
     counter = 0
     for i in range(len(lst)):
-        for j in range(i + 1, len(lst) - i):
+        for j in range(i + 1, len(lst)):
             if lst[i] < lst[j]:
                 counter += 1
                 lst[i], lst[j] = lst[j], lst[i]
