@@ -76,7 +76,6 @@ class My_Str:
         return is_identifier
 
 
-
 def main():
 
     my_str = My_Str(
@@ -89,7 +88,6 @@ def main():
     print(my_str.isalpha())
     print(my_str.isdigit())
     print(my_str.isidentifier())
-
 
 
 if __name__ == "__main__":
