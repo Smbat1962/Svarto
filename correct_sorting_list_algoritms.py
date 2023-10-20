@@ -32,8 +32,18 @@ def insertion_sort(lst):
         lst[j + 1] = temp
     return lst
 
+def insert_for_sort(lst):
+    for i in range(1, len(lst)):
+        temp = lst[i]
+        for j in range(i - 1, -1, -1):
+            if temp < lst[j]:
+                lst[j + 1] = lst[j]
+                lst[j] = temp
+    return lst
+
 
 ls = [77, 5, 36, 2, 123, 39, 8, 41, 13, 49, 55, 66, 9, 198, 221, 238, 255]
 print(selection_sort_increase(ls))
 print(selection_sort_decrease(ls))
 print(insertion_sort(ls))
+print(insert_for_sort(ls))
